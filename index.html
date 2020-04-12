@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hashigo Zake</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        <header class="top">
+            <h1>Hashigo Zake</h1>
+            <h2>Cult Beer Bar</h2>
+    </header>
+
+    <nav class="flex-nav">
+        <a href="#" class="toggleNav">☰ Menu</a>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Beers</a></li>
+          <li><a href="#">Food</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Bar Photos</a></li>
+        </ul>
+      </nav>
+
+      <section class="hero">
+        <img src="images/hero.jpg">
+      </section>
+
+    <div class="section-container">
+      <section class="details">
+        <p>Hashigo Zake takes the provision of fine beer to new levels.</p>
+        <p>Seven days a week, 362 days a year1, we serve the best that New Zealand's booming craft brewing industry has to offer.</p>
+        <p>We are also building the best range of imported beer that New Zealand has seen. We deal directly with breweries in Australia, Japan and the US and import many of the best beers in the Pacific rim. We also have access to some of the best beers coming from Europe.</p>
+        <p>We open at midday every day.</p>
+        <p>Our location is 25 Taranaki St, Te Aro, Wellington, New Zealand.</p>
+        <p>"And he dreamed, and behold a ladder set up on the earth, and the top of it reached to heaven."</p>
+        <p>1. Open every day except Christmas Day, Good Friday and Easter Sunday, in accordance with New Zealand law.</p>
+        </section>
+
+        <section class="blog">
+            <h1>News Blog</h1>
+        </section>
+
+    </div>
+
+        <section class="signup">
+            <form action="" class="signup">
+                <p>Sign Up for our Newsletter!</p>
+              <input type="text" placeholder="Your Name">
+              <input type="email" placeholder="Email Address">
+              <input type="submit" value="Sign me up!">
+            </form>
+          </section>
+      
+          <footer>
+            <p>&copy; Hashigo Zake</p>
+          </footer>
+
+
+        </div>
+
+        
+        
+        
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>
+          
+          $(function() {
+            $('.toggleNav').on('click',function() {
+              $('.flex-nav ul').toggleClass('open');
+            });
+          });
+      
+        </script>
+
+
+    
+    
+</body>
+</html>

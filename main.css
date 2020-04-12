@@ -1,0 +1,145 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  body {
+    font-family: sans-serif;
+    margin: 0;
+    background-image: url("images/wallpaper.jpg");
+  }
+
+  .top {
+      text-align: center;
+      font-family: 'Noto Sans JP', sans-serif;
+  }
+
+  a {
+    color:white;
+    font-weight: 100;
+    letter-spacing: 2px;
+    text-decoration: none;
+    background:rgb(43, 42, 42);
+    padding:20px 5px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    transition:all 0.5s;
+  }
+  
+  a:hover {
+    background:rgba(0,0,0,0.3);
+  }
+  
+  .toggleNav {
+    display: none;
+  }
+  
+  img {
+    width:100%;
+  }
+
+  .wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  input {
+    padding:10px;
+    border:0;
+  }
+
+  .section-container {
+      display: flex;
+  }
+  
+  
+  section, footer {
+    text-align: center;
+    background:rgb(43, 42, 42);
+    padding:20px;
+    margin:20px 0;
+    color:white;
+    font-weight: 100;
+  }
+
+  .flex-nav ul {
+    border:1px solid black;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display:flex;
+  }
+
+  .flex-nav li {
+    flex:1;
+  }
+
+  @media all and (max-width:1000px) {
+  
+    .flex-nav ul {
+      flex-wrap:wrap;
+    }
+  
+    .flex-nav li {
+      flex:1 1 50%;
+    }
+  }
+
+  @media all and (max-width:500px) {
+  
+    .flex-nav li {
+      flex-basis:100%;
+    }
+    
+  
+    /* Turn on flexbox */
+    .wrapper {
+      display:flex;
+      flex-direction:column;
+    }
+  
+    /* Reorder items */
+    .wrapper > * {
+      order:999;
+    }
+    
+    /* Nav */
+    .flex-nav {
+      order:1;
+    }
+  
+    .toggleNav {
+      display: block;
+    }
+  
+    .flex-nav ul {
+      display: none;
+    }
+      .flex-nav ul.open {
+        display:flex;
+      }
+    
+    /* Header */
+    .top {
+      order:2;
+    }
+  
+    /* Details */
+    .details {
+      order:3;
+    }
+
+    .blog {
+        order:4;
+    }
+  
+    /* Sign Up */
+    .signup {
+      order:5;
+    }
+  
+  }
